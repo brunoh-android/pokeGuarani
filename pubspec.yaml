@@ -1,0 +1,64 @@
+name: poke_guarani
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  animated_text_kit: ^4.2.1 
+  mask_text_input_formatter: ^2.0.0
+  intl: ^0.18.1
+  add_to_cart_animation: ^0.0.7
+  fluttertoast: ^8.2.2
+  shimmer: ^3.0.0
+  get: ^4.6.5
+  dio: ^5.2.0
+  json_annotation: ^4.8.1
+  freezed: ^2.0.2
+  sliding_sheet: ^0.5.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_screenutil: ^5.8.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.1
+  json_serializable: ^6.7.0
+  build_runner: ^2.4.5
+  hive_generator: ^2.0.0
+  mockito: ^5.4.2
+
+flutter_native_splash: 
+  background_image: assets/splash.jpeg
+  fill_horizontal: true
+  android: true
+  ios: true  
+  fullscreen: true
+  
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+  #   - images/a_dot_ham.jpeg
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  remove_alpha_ios: true 
+

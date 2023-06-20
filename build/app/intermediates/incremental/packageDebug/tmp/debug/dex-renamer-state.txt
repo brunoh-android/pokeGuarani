@@ -1,0 +1,4 @@
+#Tue Jun 20 11:06:20 BRT 2023
+base.0=/home/wsbruno/Documentos/APessoal/pokeGuarani/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
