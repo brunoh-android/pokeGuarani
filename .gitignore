@@ -16,3 +16,5 @@ key.properties
 build/
 .flutter-plugins-dependencies
 pubspec.lock
+android/.gradle
+.idea/

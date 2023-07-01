@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) => 
        GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'PokeGuarani',
+        title: 'Pokemon 1010',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
           useMaterial3: true,

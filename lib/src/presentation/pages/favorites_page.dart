@@ -30,7 +30,7 @@ class _FavoritesPageState extends State<FavoritesPage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "PokeGuarani",
+              "Pokemon 1010",
               style: TextStyle(
                 fontSize: 20.sp,
                 fontWeight: FontWeight.bold,

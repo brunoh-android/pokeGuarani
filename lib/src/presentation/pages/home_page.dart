@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "PokeGuarani",
+              "Pokemon 1010",
               style: TextStyle(
                 fontSize: 20.sp,
                 fontWeight: FontWeight.bold,
