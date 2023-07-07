@@ -6,7 +6,7 @@ import '../service/http_manager.dart';
 class HomeRepository {
   final HttpManager _httpManager = HttpManager();
 
-  int initialLimit = 5;
+  int initialLimit = 10;
   int initialOffset = 0;
 
   Future<HomeResult<PokemonDetails>> getAllPokemon({int newValue = 0}) async {

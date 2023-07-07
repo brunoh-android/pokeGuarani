@@ -9,6 +9,7 @@ import 'package:poke_guarani/src/config/router/app_pages_router.dart';
 import 'package:poke_guarani/src/presentation/controllers/home_controller.dart';
 
 import 'src/data/hive/favorites_hive.dart';
+import 'src/utils/constants/strings.dart';
 
 late Box box;
 Future<void> main() async {
@@ -36,12 +37,12 @@ class MyApp extends StatelessWidget {
         builder: (context, child) => 
        GetMaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Pokemon 1010',
+        title: title,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
           useMaterial3: true,
         ),
-        initialRoute: PagesRoutes.splashRoute,
+        initialRoute: PagesRoutes.baseRoute,
         getPages: AppPagesRouter.pages,
       ),
     );

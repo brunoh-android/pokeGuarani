@@ -10,10 +10,14 @@ abstract class AppPagesRouter {
   static final pages = <GetPage>[
     GetPage(name: PagesRoutes.infoRoute, page: () => InfoPage()),
     GetPage(name: PagesRoutes.favoritesRoute, page: () => const FavoritesPage()),
-    GetPage(name: PagesRoutes.splashRoute,
+    GetPage(
+        name: PagesRoutes.splashRoute,
         page: () => const SplashPage(),
         binding: HomeBinding()),
-    GetPage(name: PagesRoutes.baseRoute, page: () => const HomePage()),
+    GetPage(
+        name: PagesRoutes.baseRoute,
+        page: () => const HomePage(),
+        binding: HomeBinding()),
   ];
 }
 

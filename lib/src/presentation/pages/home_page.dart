@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:get/state_manager.dart';
+import 'package:poke_guarani/src/utils/constants/strings.dart';
 
 import '../controllers/home_controller.dart';
 import '../widgets/custom_shimmer.dart';
@@ -45,18 +46,14 @@ class _HomePageState extends State<HomePage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              "Pokemon 1010",
+              title,
+              textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 20.sp,
                 fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(width: 10.w),
-            Image.asset(
-              'assets/logo.png',
-              height: 54.h,
-              width: 54.w,
-            ),
           ],
         ),
         centerTitle: true,
@@ -103,7 +100,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 10.h),
             GetBuilder<HomeController>(
               builder: (controller) {
-                return Expanded(
+                return controller.noNetWork ?  Expanded(child: Center(child: Text('No NetWork', style: TextStyle(fontSize: 25.sp)))) : Expanded(
                   child: !controller.isPokemonLoading
                       ? Visibility(
                           replacement: Column(
@@ -126,15 +123,13 @@ class _HomePageState extends State<HomePage> {
                                       childAspectRatio: 9 / 11.5),
                               itemCount: controller.pokemonDetails.length,
                               itemBuilder: (_, index) {
-                                if ((index + 3) ==
-                                    controller.pokemonDetails.length) {
+                                if ((index + 3) == controller.pokemonDetails.length) {
                                   controller.getAllPokemon(loadMore: true);
                                 }
 
                                 return ItemTile(
                                     item: controller.pokemonDetails[index],
-                                    cartAnimationMethod:
-                                        itemSelectedPokemonAnimation);
+                                    cartAnimationMethod: itemSelectedPokemonAnimation);
                               }),
                         )
                       : GridView.count(
