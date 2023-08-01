@@ -40,7 +40,7 @@ class HomeController extends GetxController {
     var connectivity = Connectivity();
     connectivityResult = await connectivity.checkConnectivity();
     if (connectivityResult == ConnectivityResult.wifi ||
-        connectivityResult == ConnectivityResult.ethernet) {
+        connectivityResult == ConnectivityResult.ethernet || connectivityResult == ConnectivityResult.mobile) {
       getAllPokemon();
     } else {
       noNetWork = true;
