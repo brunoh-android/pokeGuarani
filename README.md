@@ -1,5 +1,7 @@
 README.md
 
+## Flutter Version
+## 3.10.6
 ## Api utilizada
 https://pokeapi.co/
 

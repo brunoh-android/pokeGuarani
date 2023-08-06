@@ -1,19 +1,19 @@
 name: poke_guarani
 description: A new Flutter project.
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 version: 1.0.0+8
 
 environment:
-  sdk: '>=3.0.5 <4.0.0'
+  sdk: ">=3.0.6 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
-  animated_text_kit: ^4.2.1 
+  animated_text_kit: ^4.2.1
   mask_text_input_formatter: ^2.0.0
   intl: ^0.18.1
   add_to_cart_animation: ^0.0.7
@@ -27,6 +27,12 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   flutter_screenutil: ^5.8.4
+  flutter_bloc: ^8.1.2
+  dartz: ^0.10.1
+  equatable: ^2.0.5
+  get_it: ^7.6.0
+  internet_connection_checker: ^1.0.0+1
+  shared_preferences: ^2.1.1
 
 dev_dependencies:
   flutter_test:
@@ -41,14 +47,12 @@ dev_dependencies:
   mockito: ^5.4.2
   connectivity_plus: ^4.0.1
 
-flutter_native_splash: 
+flutter_native_splash:
   background_image: assets/splash.jpeg
   fill_horizontal: true
   android: true
-  ios: true  
+  ios: true
   fullscreen: true
-  
-
 
 flutter:
   uses-material-design: true
@@ -61,5 +65,4 @@ flutter_icons:
   android: true
   ios: true
   image_path: "assets/logo.png"
-  remove_alpha_ios: true 
-
+  remove_alpha_ios: true

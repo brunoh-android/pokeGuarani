@@ -9,7 +9,7 @@ import '../../di/binding/home_binding.dart';
 abstract class AppPagesRouter {
   static final pages = <GetPage>[
     GetPage(name: PagesRoutes.infoRoute, page: () => InfoPage()),
-    GetPage(name: PagesRoutes.favoritesRoute, page: () =>  FavoritesPage()),
+    GetPage(name: PagesRoutes.favoritesRoute, page: () =>  const FavoritesPage()),
     GetPage(
         name: PagesRoutes.splashRoute,
         page: () => const SplashPage(),

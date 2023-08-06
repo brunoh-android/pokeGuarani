@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                   child: IconButton(
                     onPressed: () {
-                      Get.to(() =>  FavoritesPage());
+                      Get.to(() =>  const FavoritesPage());
                     },
                     icon: AddToCartIcon(
                       key: globalKeyPokemonFavorite,
